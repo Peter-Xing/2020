@@ -4,7 +4,7 @@ import string
 
 
 
-conn = pymysql.connect(host='localhost', user='root', passwd="aptx4869PETER", db='yiyao',charset='utf8',use_unicode = 1)
+conn = pymysql.connect(host='localhost', user='root', passwd=".....", db='yiyao',charset='utf8',use_unicode = 1)
 cur = conn.cursor()
 sp = []
 li = []
