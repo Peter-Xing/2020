@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from w3lib import html
 from lxml import etree
 
-conn = pymysql.connect(host='localhost', user='root', passwd="aptx4869PETER", db='yiyao',charset='utf8',use_unicode = 1)
+conn = pymysql.connect(host='localhost', user='root', passwd="123456", db='yiyao',charset='utf8',use_unicode = 1)
 cur = conn.cursor()
 
 
