@@ -6,7 +6,7 @@ import pymysql
 import string
 import json
 
-conn = pymysql.connect(host='localhost', user='root', passwd="aptx4869PETER", db='yiyao',charset='utf8',use_unicode = 1)
+conn = pymysql.connect(host='localhost', user='root', passwd="...", db='yiyao',charset='utf8',use_unicode = 1)
 cur = conn.cursor()
 li = []
 sp = []
@@ -30,7 +30,7 @@ for r in cur:
 	c8.append(r[9]) #tupian  img
 
 
-url = "http://api-yiyao.jisogo.com/db/save"
+url = "http://....m/db/save"
 for x in range(len(li)):
 	data = MultipartEncoder( fields = {"name":li[x],
 		"xingzhuang":sp[x],
