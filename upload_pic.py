@@ -7,7 +7,7 @@ import string
 import json
 import os
 
-conn = pymysql.connect(host='localhost', user='root', passwd="aptx4869PETER", db='yiyao',charset='utf8',use_unicode = 1)
+conn = pymysql.connect(host='localhost', user='root', passwd="..", db='yiyao',charset='utf8',use_unicode = 1)
 cur = conn.cursor()
 li = []
 sp = []
@@ -25,7 +25,7 @@ for r in cur:
 # 最后本地数据库上传db/save
 for x in range(len(li)):
 	if os.path.exists("D:\\images\\"+str(li[x])+".jpg"):
-		url = "http://api-yiyao.jisogo.com/assets/upload"
+		url = "http://.../assets/upload"
 		files = {'file':(str(li[x])+".jpg",open('D:\\images\\'+str(li[x])+'.jpg','rb'),'image/jpeg')} 
 		res = requests.post(url=url,files=files)
 		
